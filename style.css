@@ -1,0 +1,149 @@
+#header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.top-section{
+    padding-top: 9pc;
+}
+#topbody{
+    background-image: url(f1472f334b2df7c0002176ddf26ca638.jpg);
+    height: 620px;
+    background-size: 100% 100%;
+}
+#title{
+    font-weight: 1000;
+    font-size: 30px;
+}
+body{
+    margin: 0;
+    background-color:#232e36 ;
+}
+.progress-bar{
+   background-color: #71bd17db;
+}
+.progress-bar1{
+    background-color: #f30a0ae3;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+ }
+ .progress-bar2{
+    background-color: #c0c30df8;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+ }
+ .progress-bar3{
+    background-color: #1794a5ed;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+ }
+ #bar-text{
+     color: #fff;
+ }
+.name{
+    padding-left: 3pc;
+}
+#pic{
+    padding-left: 20px;
+}
+.headding{
+    text-align: center;
+    font-weight: bold;
+}
+.body-bg{
+    background: rgb(236, 244, 247);
+}
+.round{
+    border-radius: 50%;
+}
+.contact{
+    background-image: url(original.gif);
+    color: white;
+}
+#about-content{
+    padding-bottom: 50px;
+}
+#skills{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: transparent;
+    background-color: #232e36;
+}
+
+.c-head{
+   padding-left: 35%;
+    padding-top: 3pc;
+    padding-bottom: 1pc;
+    color:#fff;
+    font-weight: bolder;
+}
+#button{
+    background-color: rgb(236, 244, 247);
+    font-weight: 400;
+}
+#button:hover{
+    background-color: #fff;
+}
+#message{
+    background-color: rgb(236, 244, 247);  
+}
+.form-control{
+    background-color: rgb(236, 244, 247); 
+}
+
+#message:hover{
+    background-color: #fff;  
+}
+.form-control:hover{
+    background-color: #fff; 
+}
+.footer{
+    background: #232e36;
+    text-align: center;
+    
+}
+.logo-style{
+    font-size: 25px;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(236, 244, 247);
+    padding-left: 5px;
+}
+a.hover{
+    color:rgb(236, 244, 247) ;
+}
+.copyright{
+    text-align: center;
+    font-weight: bolder;
+    font-size: inherit;
+    color: rgb(236, 244, 247);
+    padding-bottom: 3pc;
+}
+@media (min-width: 544px) {  
+    #title {font-size:1.5rem;} /*1rem = 16px*/
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    #title {font-size:2rem;} /*1rem = 16px*/
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    #title {font-size:2.5rem;} /*1rem = 16px*/
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    #title {font-size:3rem;} /*1rem = 16px*/    
+  }
+  @media (min-width: 1200px) {  
+    #contact {padding-left: 10%;}  
+  } 
