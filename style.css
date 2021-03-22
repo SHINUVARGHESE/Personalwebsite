@@ -62,6 +62,7 @@ body{
 .contact{
     background-image: url(original.gif);
     color: white;
+    padding-top: 80px;
 }
 #about-content{
     padding-bottom: 50px;
@@ -93,7 +94,12 @@ body{
 .form-control{
     background-color: rgb(236, 244, 247); 
 }
-
+#nameerror,#numbererror,#mailerror,#messageerror{
+    color :rgb(236, 244, 247);
+    font-size: 20px;
+    
+    
+}
 #message:hover{
     background-color: #fff;  
 }
