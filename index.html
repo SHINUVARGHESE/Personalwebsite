@@ -131,26 +131,22 @@
                                 <div class="row">
                                     <div class="col-md-6" >
                                         <div class="form-group" >
-                                            <label id="nameerror"></label>
-                                            <input type="text" id="nam" required onkeyup="names()" name="name" class="form-control" placeholder="Name">
+                                            <input type="text"  name="name" class="form-control" placeholder="Name">
                                         </div>
                                         <div class="form-group" data-error="Enter the name">
-                                            <label id="mailerror"></label>
-                                            <input type="email" required onkeyup="mails()" name="mail" id="mai" class="form-control" placeholder="Email">
+                                            <input type="email"  name="mail" class="form-control" placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <label id="numbererror"></label>
-                                            <input type="text"required onkeyup="number()" id="num" name="mobile" maxlength="10" class="form-control" placeholder="Phone">
+                                            <input type="text" name="mobile" maxlength="10" class="form-control" placeholder="Phone">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label id="messageerror"></label>
-                                            <textarea name="content" onkeyup="message()"  required id="mes" cols="30" rows="7"
+                                            <textarea name="content"   cols="30" rows="7"
                                                 class="form-control" placeholder="Message"></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <input type="submit" id="button" onclick="names(),number(),message(),mails()" class="btn" value="Send Message">
+                                            <input type="submit" id="button"  class="btn" value="Send Message">
                                         </div>
                                     </div>
 
@@ -185,57 +181,6 @@
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <script src="form.js"> </script>
-<script>
-        function names(){
-            var x = document.getElementById("nam").value
-            var result = isNaN(x)
-            if(! result) {
-                document.getElementById("nameerror").innerHTML = "Please enter charractors"
-            }else if (x.length < 4 ){
-                document.getElementById("nameerror").innerHTML = "Please enter minimum 4 charactor"
-            }else {
-                document.getElementById("nameerror").innerHTML = ""
-            }
-            
-        }
-        function mails(){
-            var n = document.getElementById("mai").value
-            var patt = new RegExp("@");
-            var res = patt.test(n);
-           
-            if(! res ){
-              
-                document.getElementById("mailerror").innerHTML = "Please enter valid mail id"
-               
-            }else{
-                document.getElementById("mailerror").innerHTML = ""
-            }
-        
-        }
-
-        function number(){
-            var y = document.getElementById("num").value
-            if(isNaN(y)){
-                document.getElementById("numbererror").innerHTML = "Please enter numbers"
-            
-            }else if (y.length < 10 ){
-                document.getElementById("numbererror").innerHTML = "Please enter minimum 10 charactor"
-            }else {
-                document.getElementById("numbererror").innerHTML = " "
-            }
-
-        }
-
-        function message(){
-            var z = document.getElementById("mes").value
-            if (z.length == 0 ){
-                document.getElementById("messageerror").innerHTML = "Please enter your message"
-            }else {
-                document.getElementById("messageerror").innerHTML = " "
-            }
-
-        }
-    </script>
 </body>
 
 </html>
