@@ -31,6 +31,7 @@
         
           mobile: {
               required: true,
+              minlength:10,
               maxlength:10,
               numeric:true,
               noSpace: true
@@ -52,7 +53,8 @@
           },
        
           mobile: {
-              required: 'Please Enter  Your Phone Number'
+              required: 'Please Enter  Your Phone Number',
+              minlength:'Enter a valid mobile number'
           },
         
           content: {
